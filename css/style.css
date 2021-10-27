@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Padauk', sans-serif;
+    line-height: 2;
+}
+
+.header {
+height: 95vh;
+background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.39), rgba(0, 0, 0, 0.616) ), url('../img/1.jpg');
+background-position: center;
+background-size: cover;
+}
+
+.text-box {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -35%);
+width: 100%;
+overflow: hidden;
+text-align: center;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: pink;
+    text-shadow: 0 0 3px darkslategray, 0 0 5px darkslategray;
+}
+
+.heading-main {
+
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    text-shadow: 0 0 3px darkslategray, 0 0 5px darkslategray;
+animation-name: moveInLeft;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+
+80% {
+    transform: translateX(50px);
+}
+
+100% {
+    transform: translateX(0);
+opacity: 1;
+}
+
+}
+
+.heading-sub {
+display: block;
+font-size: 1.6rem;
+letter-spacing: 1.3rem;
+animation-name: moveInRight;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight { 
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    
+    80% {
+        transform: translateX(-50px);
+    }
+    
+    100% {
+        transform: translateX(0);
+    opacity: 1;
+    }
+
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid pink;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    display: inline-block;
+    color: #fff;
+
+    transition: all 0.3s;
+}
+
+.btn:hover {
+box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
+background-color: rgba(255, 192, 203, 0.288);
+transform: translateY(-5px);
+}
+
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.main {
+height: 95vh;
+background-color:pink;
+padding-bottom: 10rem;
+text-align: center;
+padding-top: 5rem;
+clip-path: polygon(50% 6%, 100% 0, 100% 42%, 100% 81%, 100% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
+margin-top: -3rem;
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 3px darkslategray, 0 0 5px darkslategray;
+}
+
+.gallery {
+width: 75%;
+margin: 0 auto;
+height: 100%;
+position: relative;
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+position: absolute;
+width: 370px;
+outline-offset: 1rem;
+transition: all 0.3s;
+z-index: 10;
+
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(255, 192, 203, 0.288);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-1 {
+    left: 20%;
+    top: 15%
+}
+
+.gallery_photo-3 {
+    top: 45%;
+}
+
+.gallery_photo-2 {
+left: 30%;
+top: 30%;
+}
+
+.footer {
+    color: darkslategray;
+    font-size: 2rem;
+    height: 250px;
+    text-align: center;
+    height: 150px;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color:  darkslategray;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color:rgb(30, 58, 58) ;
+    transform: scale(1.2);
+}
